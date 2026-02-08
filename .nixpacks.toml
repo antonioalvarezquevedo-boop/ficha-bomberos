@@ -1,0 +1,12 @@
+[php]
+version = "8.4"
+
+[nixpacks.env]
+PHP_INI_SCAN_DIR = "/etc/php/conf.d"
+
+[build]
+cmds = [
+    "mkdir -p /etc/php/conf.d",
+        "echo 'extension=pdo_mysql' > /etc/php/conf.d/pdo-mysql.ini"
+        ]
+        
